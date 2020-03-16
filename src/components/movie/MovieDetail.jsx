@@ -29,7 +29,6 @@ export default class MovieDetail extends React.Component {
       <Button type="primary" onClick={this.goBack}>
         <Icon type="left" />返回电影列表页面
       </Button>
-
       {this.renderInfo()}
     </div>
   }
@@ -52,10 +51,8 @@ export default class MovieDetail extends React.Component {
       return <div>
         <div style={{ textAlign: 'center' }}>
           <h1>{this.state.info.title}</h1>
-
           <img src={this.state.info.images.large.replace('img3', 'img1')} alt="" />
         </div>
-
         <p style={{ textIndent: '2em', lineHeight: '30px' }}>{this.state.info.summary}</p>
       </div>
     }
